@@ -25,6 +25,7 @@ pub fn configure_logging(verbose: i32, warn: bool, quite: bool) {
             "tokio_reactor",
             "actix_server",
             "actix_web",
+            "actix_http",
             "async_std",
         ] {
             dispatch = dispatch.level_for(*library, Level::Warn.to_level_filter());
