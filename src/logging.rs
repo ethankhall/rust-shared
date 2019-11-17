@@ -23,6 +23,9 @@ pub fn configure_logging(verbose: i32, warn: bool, quite: bool) {
             "rustls",
             "tokio_threadpool",
             "tokio_reactor",
+            "actix_server",
+            "actix_web",
+            "async_std",
         ] {
             dispatch = dispatch.level_for(*library, Level::Warn.to_level_filter());
         }
